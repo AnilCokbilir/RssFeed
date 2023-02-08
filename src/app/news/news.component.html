@@ -1,0 +1,7 @@
+<div *ngFor="let item of getData.xmlItems">
+    <div class="border-solid border-2 shadow p-3 m-3 rounded-md">
+        <div class="date">{{item.published | date}} | {{item.published | date:"HH:mm"}}</div>
+        <a href="{{item.id}}" class="title text-lg font-bold hover:underline">{{item.title['_']}}</a>
+        <div class="title">{{item.summary['_']}} <a href="{{item.id}}" class="font-medium">[mehr]</a></div>
+    </div>
+</div>
